@@ -1,0 +1,52 @@
+/*
+Personal Website Table CSS (mobile)
+Author: DM
+Date: 3/24/23
+
+File name:p_table-m.css
+*/
+
+
+table{
+	margin: auto;
+	font-family: arial, verdana, sans-serif;
+	font-size: 100%;
+}
+
+table tr th{
+	text-align: center;
+}
+
+table, th, td{
+	border-bottom: 2px solid purple;
+	border-top: 2px solid purple;
+	border-collapse: collapse;
+	padding: 0.25em;
+	text-align: center;
+	margin: auto;
+}
+
+td:nth-of-type(even){
+	background-color: lavender;
+}
+
+@media only screen and (max-width: 480px){
+
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+
+    table{
+        border-radius: 10px;
+    }
+    
+    article#skills{
+        text-align: center;
+    }
+    
+    td { 
+        border: none; 
+        position: relative;
+        padding-left: 0%; 
+    }
+    }

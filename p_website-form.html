@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<!--
+	Personal Website Form HTML
+	Author: DM
+	Date: 4/13/23
+	File: p_website-form.html
+	-->
+<meta charset = "utf-8">
+<link href = "p_website-form.css" rel = "stylesheet" />
+<link href = "p_website.css" rel = "stylesheet" />
+<meta name="viewport" content="width = device-width, initial-scale = 1" />
+<title>Dan Muller: Contact Form</title>
+</head>
+<body>
+	<header>
+		<h1>Contact Form</h1>
+		<figure>
+			<img src="media/dan-m-headshot.png" alt = "Dan M Headshot">
+		</figure>
+	</header>
+<div class="dropdown">
+		<button class="dropbtn">Menu</button>
+	<nav class="dropdown-content">
+		<a href="p_website.html">Home</a>
+		<a href="p_website-form.html">Contact Form</a>
+		<a href="p_education-info.html">Education Info</a>
+		<a href="p_workexp-info.html">Work Experience Info</a>
+		<a href="p_skills-info.html">Skills Info</a>
+		<a href="p_hobbies.html">Hobbies</a>	
+	</nav>
+</div>
+    <main>
+		<form id="contactForm"
+			action="http://ftp.sunyrockland.edu/~laaron/form-processor.php"
+				method="post">
+			<div id="main">
+				<fieldset class = "contact">
+				
+				<div class="field">
+				<label for ="firstName">First Name:*</label>
+					<input type="text" name="firstName" id="firstName" tabindex="0" required />
+				</div>
+				
+				<div class="field">
+				<label for ="lastName">Last Name:*</label>
+					<input type="text" name="lastName" id="lastName" required />
+				</div>
+					
+				<div class="field">	
+				<label for ="phone">Phone:*</label>
+					<input type="text" name="phone" id="phone" placeholder="Enter a 10 digit phone number" size="10" maxlength="10" required />
+				</div>
+					
+				<div class="field">	
+				<label for ="email">Email:*</label>
+					<input type="email" name="email" id="email" placeholder="Email Address" required />
+				</div>
+
+                <div class="field">	
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Enter your message for me here!"></textarea>
+				</div>
+
+				<div class="field">	
+
+
+					Have we met before?:
+                    <label for="yes" class="clickables">Yes
+					<input type="radio" name="havewemet" id="yes" value="Yes">
+					<span class="radio"></span>
+				  	</label>
+  					<label for="no" class="clickables">No
+					<input type="radio" name="havewemet" id="no" value="No" checked>
+					<span class="radio"></span>
+					</label>
+                </div>
+
+				<div class="field">	
+					If so, where have we met?:
+                    <label for="online" class="clickables" id="checkbox">Online
+					<input type="checkbox" name="metonline" id="online">
+				  	</label>
+  					<label for="inperson" class="clickables" id="checkbox">In person
+					<input type="checkbox" name="metirl" id="inperson">
+					</label>
+                </div>
+
+				<div class="field">	
+					
+				<label for="selectlist">For what reason are you contacting me?</label>
+  				<select name="contactreason" id="selectlist" class="clickables">
+   	 				<option value="Business">Business</option>
+    				<option value="Personal">Personal</option>
+  				</select>
+				</div>
+
+				<div class="field">	
+				<label for="date">What is today's date?</label>
+				<input type="date" id="date" name="date">
+				</div>
+
+				</fieldset>
+				
+                </div>
+			
+			<fieldset id="submitclear">
+				<div id ="submit">
+				<input type="submit" id="submitButton" class="button" value="Submit Form" />
+				</div>
+				
+				<div id ="reset" class="button">
+				<input type="reset" id="resetButton" class="button" value="Clear Form" />
+				</div>
+			</fieldset>
+		</form>
+		<footer>
+			Dan Muller &#186; <a href = "mailto:danmullertech@gmail.com" target="_blank">Contact Me</a>
+		</footer>
+</main>
+</body>
+</html>

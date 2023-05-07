@@ -1,0 +1,31 @@
+/*
+Personal Website Table CSS
+Author: DM
+Date: 3/24/23
+
+File name:p_table.css
+*/
+
+table{
+	margin: auto;
+	font-family: arial, verdana, sans-serif;
+	font-size: 100%;
+}
+
+h2{
+	text-align: center;
+}
+
+table, th, td, tr{
+	border-bottom: 2px solid purple;
+	border-top: 2px solid purple;
+	border-collapse: collapse;
+	padding: 0.25em;
+	text-align: center;
+	margin: auto;
+}
+
+td:nth-of-type(even){
+	background-color: lavender;
+}
+
